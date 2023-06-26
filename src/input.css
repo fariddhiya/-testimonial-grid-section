@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+  }
+
+  * {
+    @apply text-[13px];
+  }
+}
+
+@layer components {
+  .card {
+    @apply w-[390px] mx-auto my-5 p-10 pl-12 pr-20 rounded-lg shadow-lg relative xl:w-auto;
+  }
+}
